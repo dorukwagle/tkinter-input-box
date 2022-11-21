@@ -1,10 +1,10 @@
 from tkinter import ttk, StringVar
 
 class InputBox(ttk.Entry):
-    def __init__(self, container, text="", placeholder="", input_type="", takefocus=0, font_color="", placeholder_color="", **kw):
+    def __init__(self, container, text="", placeholder="", input_type="", show="*", takefocus=0, font_color="", placeholder_color="", **kw):
         self.__place_color = "#D3D3D3" if not placeholder_color else placeholder_color
         self.__foreground = font_color if font_color else "#000000"
-        self.__show = "*" if input_type == "password" else ''
+        self.__show = show if input_type == "password" else ''
         self.__holder = StringVar(container)
         self.__placeholder = placeholder
         super().__init__(container, textvariable=self.__holder, takefocus=takefocus, **kw)
@@ -25,6 +25,7 @@ class InputBox(ttk.Entry):
 
     def __add_placeholder(self, placeholder):
         self.__holder.set("")
+        self.__text = self.__holder.get()
         self.__holder.set(placeholder)
         self.config(foreground=self.__place_color, show='')
 
@@ -70,4 +71,5 @@ class InputBox(ttk.Entry):
         return self.__placeholder
 
     def set_placeholder(self, placeholder):
-        self.__add_placeholder(placeholder)
+        self.__placeholder = placeholder
+        self.__add_placeholder(self.__placeholder)

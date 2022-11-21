@@ -12,6 +12,7 @@
 <li>take_focus : whether to take focus or not, by default it is 0, i.e. it does not take focus by default</li>
 <li>font_color : color of the text</li>
 <li>placeholder_color : color of the placeholder</li>
+<li>show: display the given character in the input box while entering password ( check the example )</li>
 <li> And all the other options that usual ttk.Entry supports </li>
 
 **<br><br>Methods**
