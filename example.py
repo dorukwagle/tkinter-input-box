@@ -1,6 +1,5 @@
 import tkinter as tk
-from tkinter import ttk
-from tkinter_input_box import InputBox
+from tkinter_input_box.input_box import InputBox
 
 root = tk.Tk()
 root.geometry("600x600")
