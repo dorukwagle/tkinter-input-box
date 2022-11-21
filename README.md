@@ -1,7 +1,7 @@
 **Installation**<br>
 <pre>pip install tkinter-input-box</pre>
 **Import in code<br>**
-<pre>from tkinter_input_box import InputBox</pre><br>
+<pre>from tkinter_input_box.input_box import InputBox</pre><br>
 
 **_Refer to the example.py file for example<br>_**
 <br>
