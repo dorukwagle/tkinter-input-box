@@ -2,4 +2,4 @@ venv/
 __pycache__/
 .idea/
 *.bak
-input_box.py
+tkinter_input_box/input_box.py
