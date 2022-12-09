@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+tkinter_input_box/__init__.py
+tkinter_input_box/input_box.py
+tkinter_input_box.egg-info/PKG-INFO
+tkinter_input_box.egg-info/SOURCES.txt
+tkinter_input_box.egg-info/dependency_links.txt
+tkinter_input_box.egg-info/top_level.txt
