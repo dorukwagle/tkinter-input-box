@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter_input_box.input_box import InputBox
+from tkinter import ttk
 
 root = tk.Tk()
 root.geometry("600x600")
@@ -26,9 +27,10 @@ in_box1.pack()
 inp_pass = InputBox(root, placeholder="enter password", placeholder_color="grey", input_type="password", font=("", 25))
 inp_pass.pack()
 
+
 # password input box with show option
 inp_pass1 = InputBox(root, placeholder="enter password", placeholder_color="grey", input_type="password",
-                    show="&", font=("", 25))
+                    show="&", font=("", 25), background="gray", fieldbackground="blue")
 inp_pass1.pack()
 
 root.mainloop()
