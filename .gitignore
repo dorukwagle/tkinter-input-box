@@ -1,5 +1,4 @@
 venv/
 __pycache__/
 .idea/
-*.bak
-tkinter_input_box/input_box.py
+dist/
