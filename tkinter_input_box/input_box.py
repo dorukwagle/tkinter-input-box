@@ -57,7 +57,7 @@ class InputBox(ttk.Entry):
 
     def __on_key_release(self, key):
         # if the holder is empty add the placeholder again
-        if not self.__holder.get():
+        if not self.__holder.get() or not self.__text:
             self.__add_placeholder(self.__placeholder)
             # empty the self.__text
             self.__text = ""

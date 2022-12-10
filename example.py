@@ -32,5 +32,4 @@ inp_pass.pack()
 inp_pass1 = InputBox(root, placeholder="enter password", placeholder_color="grey", input_type="password",
                     show="&", font=("", 25), background="gray", fieldbackground="blue")
 inp_pass1.pack()
-
 root.mainloop()
